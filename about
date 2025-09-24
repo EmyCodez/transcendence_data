@@ -1,0 +1,13 @@
+The "42 Transcendence" project, often referred to as ft_transcendence, is a major full-stack web application development project within the 42 School curriculum. It requires students to build an online platform to play a real-time multiplayer game (typically Pong) and includes various social features.
+Key aspects of 42 Transcendence using Node.js and TypeScript:
+Full-Stack Development: The project involves building both the frontend and backend of the application.
+Backend with Node.js and TypeScript: The backend is typically built using a Node.js framework like NestJS or Fastify, leveraging TypeScript for type safety, scalability, and maintainability.
+NestJS: A popular choice due to its opinionated structure, modularity, and strong TypeScript support, making it suitable for large-scale applications.
+Fastify: Another performant Node.js framework often chosen for its speed and efficiency.
+Frontend with TypeScript Framework: The frontend is usually developed using a modern TypeScript-based framework such as React, Angular, or Vue.js, ensuring a single-page application (SPA) experience.
+Real-time Communication: WebSockets are crucial for enabling real-time gameplay and chat functionalities, allowing for immediate updates between clients and the server.
+Authentication and Security: The project requires implementing secure user authentication, often utilizing OAuth (specifically with the 42 intranet system), JWT-based tokens for authorization, and potentially two-factor authentication (2FA).
+Database Integration: PostgreSQL is typically the required database, with Object-Relational Mappers (ORMs) like Prisma or TypeORM often used to interact with it from the TypeScript backend.
+Containerization with Docker: The entire application, including the frontend, backend, and database, is usually containerized using Docker and orchestrated with Docker Compose for easy deployment and management.
+Social Features: Beyond the game, the platform often includes features like user profiles, friend systems, chat channels, private messaging, and a ranking system.
+In essence, 42 Transcendence serves as a comprehensive exercise in modern web development, emphasizing best practices in architecture, security, real-time communication, and deployment, all within the robust and type-safe environment provided by Node.js and TypeScript.
