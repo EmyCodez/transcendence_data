@@ -1,0 +1,173 @@
+Certainly! Below is a study map tailored for **Node.js**, **Fastify**, **PostgreSQL**, and **Prisma**. This map will guide you through the essential concepts and skills to master, and you'll gain hands-on experience as you progress through the learning process.
+
+---
+
+### **1. Prerequisites**
+
+Before diving into Fastify, Node.js, PostgreSQL, and Prisma, ensure you have a basic understanding of:
+
+* **JavaScript / TypeScript Basics**: Since you'll be working with Node.js (JavaScript) and Prisma (TypeScript), make sure you are comfortable with core JavaScript concepts such as:
+
+  * Variables, functions, loops, and arrays
+  * Asynchronous programming (callbacks, promises, async/await)
+  * Object-oriented programming (classes, interfaces)
+* **SQL Basics**: Familiarize yourself with basic SQL commands like `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `JOIN`, and filtering with `WHERE`.
+
+---
+
+### **2. Node.js & Fastify Fundamentals**
+
+#### **Node.js Basics**
+
+* **What is Node.js?**
+
+  * Learn about the **non-blocking, event-driven architecture**.
+  * How Node.js is different from traditional server-side languages (like C/C++).
+  * **Modules**: Understand how Node.js uses CommonJS for module imports (`require`).
+  * Asynchronous Programming: Learn **callbacks**, **promises**, and **async/await**.
+* **Setting up a Node.js project**: Use **npm** or **yarn** to create a new project, install dependencies, and manage your packages.
+
+**Resources:**
+
+* [Node.js Official Docs](https://nodejs.org/en/docs/)
+* [JavaScript.info (Async programming)](https://javascript.info/async)
+
+#### **Fastify Basics**
+
+* **What is Fastify?**
+
+  * Fastify is a web framework similar to Express but designed for **performance**. It's built to be lightweight and fast.
+  * Learn the **Fastify lifecycle**, routing, request/response handling, and middleware.
+
+**Key Concepts**:
+
+* **Routing**: Set up endpoints for different HTTP methods (`GET`, `POST`, `PUT`, `DELETE`).
+* **Schemas**: Fastify uses JSON Schema to validate requests and responses.
+* **Middleware**: How to add custom middleware to intercept requests or responses.
+* **Error Handling**: Proper error handling in Fastify.
+
+**Resources:**
+
+* [Fastify Documentation](https://www.fastify.io/docs/latest/)
+
+---
+
+### **3. PostgreSQL & Prisma Integration**
+
+#### **PostgreSQL Basics**
+
+* **What is PostgreSQL?**
+
+  * A powerful, open-source **relational database** system. Learn how to design and structure a relational database with tables, keys, and relationships.
+  * **SQL queries**: Practice with basic SQL commands (`SELECT`, `INSERT`, `UPDATE`, `DELETE`), as well as filtering and aggregating data.
+  * **Database normalization**: Understand concepts like **1NF**, **2NF**, **3NF**, and how to design efficient schemas.
+  * **Indexes** and **Joins**: Understand the importance of indexes for optimizing queries and how to perform different types of joins.
+
+**Resources:**
+
+* [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+* [SQLBolt - Learn SQL Basics](https://sqlbolt.com/)
+
+#### **PostgreSQL Setup**:
+
+* **Install PostgreSQL** on your local machine or use a service like **ElephantSQL** for an online database.
+* Learn to **create databases**, **tables**, and **relationships** (one-to-many, many-to-many).
+* Learn to **import and export data** in and out of PostgreSQL.
+
+#### **Prisma ORM Basics**
+
+* **What is Prisma?**
+
+  * Prisma is an ORM (Object-Relational Mapper) that simplifies database queries and integrates well with **Node.js** and **TypeScript**.
+  * Prisma provides a **type-safe** query engine that helps avoid runtime errors with its rich TypeScript support.
+
+**Key Concepts:**
+
+* **Setting up Prisma**: Install and configure Prisma with your PostgreSQL database.
+* **Prisma Schema**: Define your database models (tables) in the `schema.prisma` file.
+* **Migrations**: Use Prisma migrations to automatically sync your schema with your database.
+* **Querying the Database**: Learn to perform CRUD operations (`create`, `read`, `update`, `delete`) using Prisma's client API.
+* **Relations**: Learn how to handle **one-to-many** and **many-to-many** relationships using Prisma.
+
+**Resources:**
+
+* [Prisma Documentation](https://www.prisma.io/docs/)
+* [Prisma Quickstart Guide](https://www.prisma.io/docs/getting-started/)
+
+---
+
+### **4. Full-Stack Development Flow (Fastify + PostgreSQL + Prisma)**
+
+#### **Backend Development**
+
+* **Building a RESTful API**:
+
+  * Set up routes and handle different HTTP requests using Fastify.
+  * Set up a basic server to handle `GET`, `POST`, `PUT`, and `DELETE` requests.
+* **Database Integration**:
+
+  * Use Prisma to interact with your PostgreSQL database. Start by setting up a **simple schema** for users or blog posts and perform basic CRUD operations.
+* **Authentication and Authorization**:
+
+  * Implement **JWT authentication** with **Fastify** (via Fastify JWT plugin).
+  * Use **JWT tokens** for managing user sessions securely.
+
+**Example Tasks**:
+
+* Build a **basic user management system**: Create users, fetch users, update, and delete users.
+* Build a **blog API**: Create posts, fetch posts, and manage comments.
+
+#### **Real-Time Features (WebSockets with Fastify)**:
+
+* Learn to use **WebSockets** (with Fastify or other libraries like **Socket.io**) to enable **real-time communication** between the client and server.
+
+  * This will be crucial for multiplayer features (e.g., game updates).
+
+**Resources**:
+
+* [Fastify WebSocket plugin](https://www.fastify.io/docs/latest/Plugins/#websocket)
+* [Socket.io Docs](https://socket.io/docs/)
+
+---
+
+### **5. Advanced Features & Best Practices**
+
+#### **Error Handling**:
+
+* Learn how to handle errors in Fastify, including validation errors, database errors, and custom application errors.
+
+#### **Testing**:
+
+* Use testing libraries like **Jest** or **Mocha** to write unit and integration tests for your Fastify application and Prisma queries.
+
+#### **Deployment**:
+
+* Learn how to **deploy your Node.js application** on cloud platforms (e.g., **Heroku**, **DigitalOcean**, or **AWS**).
+* Use **Docker** for containerization, ensuring the application runs consistently across different environments.
+
+---
+
+### **Study Map Recap:**
+
+1. **Core Web Concepts**: JavaScript/TypeScript basics, HTTP, APIs.
+2. **Node.js Fundamentals**: Asynchronous programming, basic server setup.
+3. **Fastify**: Setup, routing, middleware, error handling.
+4. **PostgreSQL**: SQL basics, normalization, querying.
+5. **Prisma ORM**: Schema, migrations, relations, CRUD.
+6. **Backend Application**: Build a RESTful API, integrate with PostgreSQL using Prisma.
+7. **WebSockets**: Enable real-time communication for multiplayer features.
+8. **Testing and Deployment**: Test APIs, deploy the app to production.
+
+---
+
+### **Recommended Learning Path**
+
+1. **Start with Node.js**: Learn asynchronous programming and how to set up a basic server.
+2. **Learn Fastify**: Set up routes and middleware, understand its lifecycle.
+3. **Dive into PostgreSQL**: Learn SQL basics and how to design tables and relationships.
+4. **Set up Prisma**: Configure Prisma to interact with your PostgreSQL database.
+5. **Build a CRUD API**: Start with a simple API using Fastify and Prisma to interact with the database.
+6. **WebSockets**: Add real-time communication for multiplayer features.
+7. **Test & Deploy**: Test your code and deploy it using Docker and cloud services.
+
+By following this map, you'll develop a solid understanding of how to build and deploy a full-stack application using **Node.js**, **Fastify**, **PostgreSQL**, and **Prisma**. Once you have mastered these concepts, you will be well-prepared for your **42 Transcendence** project!
